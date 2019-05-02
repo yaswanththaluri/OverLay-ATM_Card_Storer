@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginBottom="60dp">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:paddingStart="25dp"
+        android:gravity="center_vertical"
+        android:paddingBottom="20dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name User"
+            android:id="@+id/nameUser"
+            android:textColor="#681fc7"
+            android:textSize="32sp"
+            android:textStyle="normal"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="@drawable/login_background"
+        android:gravity="center"
+        >
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change login pin"
+            android:layout_centerInParent="true"
+            android:id="@+id/pinChange"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:id="@+id/changeLayout"
+            android:paddingTop="25dp"
+            android:visibility="invisible"
+            >
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/oldPin"
+                    android:layout_height="wrap_content"
+                    android:textColor="#681fc7"
+                    android:hint="Enter Old PIN"
+                    android:textColorHint="#681fc7"
+                    android:drawablePadding="15dp"
+                    android:inputType="numberPassword"
+                    android:maxLength="4"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/newChangePin"
+                    android:layout_height="wrap_content"
+                    android:textColor="#681fc7"
+                    android:hint="Enter New PIN"
+                    android:textColorHint="#681fc7"
+                    android:drawablePadding="15dp"
+                    android:inputType="numberPassword"
+                    android:maxLength="4"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/cnfNewPin"
+                    android:layout_height="wrap_content"
+                    android:textColor="#681fc7"
+                    android:hint="Confirm New PIN"
+                    android:textColorHint="#681fc7"
+                    android:drawablePadding="15dp"
+                    android:inputType="numberPassword"
+                    android:maxLength="4"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SAVE"
+                    android:layout_marginRight="15dp"
+                    android:id="@+id/saveNewPin"/>
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cancel"
+                    android:layout_marginRight="15dp"
+                    android:id="@+id/cancelRequest"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

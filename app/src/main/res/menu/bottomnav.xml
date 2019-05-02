@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/availiblecards"
+        android:icon="@drawable/allcards"
+        android:title="All Cards"
+        app:showAsAction="ifRoom" />
+
+
+    <item
+        android:title="Add Card"
+        android:icon="@drawable/add"
+        app:showAsAction="ifRoom"
+        android:id="@+id/addcard"/>
+
+
+    <!--<item-->
+        <!--android:icon="@drawable/profile"-->
+        <!--android:title="Profile"-->
+        <!--android:id="@+id/profile"-->
+        <!--app:showAsAction="ifRoom"/>-->
+
+
+
+</menu>

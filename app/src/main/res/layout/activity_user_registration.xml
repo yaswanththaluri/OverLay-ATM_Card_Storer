@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login_gradient"
+    tools:context=".UserRegistration">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OverLay"
+            android:textColor="#681fc7"
+            android:textSize="32sp"
+            android:id="@+id/headTitle"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="4"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:background="@drawable/login_background"
+        android:gravity="center"
+        android:padding="25dp">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:id="@+id/userName"
+            android:layout_height="wrap_content"
+            android:textColor="#681fc7"
+            android:hint="Your Name"
+            android:textColorHint="#681fc7"
+            android:drawablePadding="15dp"
+            android:inputType="textEmailAddress"
+            />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter the Lock Pin"
+            android:textColor="#681fc7"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="left"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="left"
+            >
+
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/rinp1"
+                android:textColor="#ffffff"
+                android:inputType="numberPassword"
+                android:hint="*"
+                android:maxLength="1"
+                android:imeOptions="actionNext"
+                android:cursorVisible="false"
+                android:gravity="center"/>
+
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/rinp2"
+                android:hint="*"
+                android:maxLength="1"
+                android:imeOptions="actionNext"
+                android:cursorVisible="false"
+                android:textColor="#ffffff"
+                android:inputType="numberPassword"
+                android:gravity="center"/>
+
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/rinp3"
+                android:textColor="#ffffff"
+                android:inputType="numberPassword"
+                android:hint="*"
+                android:maxLength="1"
+                android:imeOptions="actionNext"
+                android:cursorVisible="false"
+                android:gravity="center"/>
+
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/rinp4"
+                android:hint="*"
+                android:maxLength="1"
+                android:imeOptions="actionNext"
+                android:cursorVisible="false"
+                android:textColor="#ffffff"
+                android:inputType="numberPassword"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm the Lock Pin"
+            android:textColor="#681fc7"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="left"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="left"
+            >
+
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/cnfinp1"
+                android:textColor="#ffffff"
+                android:inputType="numberPassword"
+                android:hint="*"
+                android:maxLength="1"
+                android:imeOptions="actionNext"
+                android:cursorVisible="false"
+                android:gravity="center"/>
+
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/cnfinp2"
+                android:hint="*"
+                android:maxLength="1"
+                android:imeOptions="actionNext"
+                android:cursorVisible="false"
+                android:textColor="#ffffff"
+                android:inputType="numberPassword"
+                android:gravity="center"/>
+
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/cnfinp3"
+                android:textColor="#ffffff"
+                android:inputType="numberPassword"
+                android:hint="*"
+                android:maxLength="1"
+                android:imeOptions="actionNext"
+                android:cursorVisible="false"
+                android:gravity="center"/>
+
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/cnfinp4"
+                android:hint="*"
+                android:maxLength="1"
+                android:imeOptions="actionNext"
+                android:cursorVisible="false"
+                android:textColor="#ffffff"
+                android:inputType="numberPassword"
+                android:gravity="center"/>
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:background="#681fc7"
+            android:textColor="#ffffff"
+            android:layout_marginTop="15dp"
+            android:id="@+id/register"/>
+
+    </LinearLayout>
+
+</LinearLayout>
